@@ -22,7 +22,19 @@ import React, { useState } from "react";
 const GameButton = () => {
   const [gameRunning, setGameRunning] = useState(false);
 
-  return <div></div>;
+  return (
+    <div>
+      <button
+        className="mt-5 px-12 py-2 mx-auto block  bg-slate-500 font-semibold text-white rounded-md shadow-slate-900 shadow-2xl hover:opacity-80 cursor-pointer"
+        onClick={(e) => {
+          setGameRunning(!gameRunning);
+          console.log(gameRunning);
+        }}
+      >
+        {gameRunning ? "Paused" : "Play"}
+      </button>
+    </div>
+  );
 };
 
 export default GameButton;

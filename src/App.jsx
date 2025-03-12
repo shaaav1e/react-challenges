@@ -1,15 +1,12 @@
 import { useState } from "react";
 import GameButton from "./components/gameButton";
-
+import StudyBuddy from "./StudyBuddy";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1 class="text-3xl font-bold  bg-slate-700 bg underline">
-        Hello world!
-      </h1>
+      <h1 className="text-center mt-5 font-bold text-2xl ">React Challenges</h1>
       <GameButton />
+      <StudyBuddy />
     </>
   );
 }
